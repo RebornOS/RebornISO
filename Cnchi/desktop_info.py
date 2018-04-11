@@ -78,7 +78,7 @@ EXCLUDED_FEATURES = {
     'base': ["bluetooth", "chromium", "maintenance", "dropbox", "email", "firefox", "firewire", "opera", "vivaldi", "firewall", "flash", "games", "graphic_drivers", "graphics", "hardinfo", "office", "visual", "vlc", "nautilus", "nemo", "nixnote", "qt-play", "movie", "gtk-play", "qt-play", "power", "spotify", "wallpapers"],
     'cinnamon': ["lamp", "visual", "nemo", "qt-play"],
     'deepin': ["lamp", "visual", "qt-play"],
-    'pantheon': ["lamp", "visual", "qt-play"],
+    'pantheon': ["lamp", "visual", "qt-play", "nemo"],
     'gnome': ["lamp", "visual", "nautilus", "qt-play"],
     'kde': ["lamp", "visual", "gtk-play"],
     'mate': ["lamp", "visual", "qt-play"],

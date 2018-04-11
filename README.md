@@ -1,5 +1,5 @@
 # Reborn-OS
-![Deepin_Image](/images/deepin4.png)
+![Deepin_Image](/images/deepin.png)
 
 ## Download Locations ##
 - <a href="https://sourceforge.net/projects/antergos-deepin/" class="button">Sourceforge</a> 
