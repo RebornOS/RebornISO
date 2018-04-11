@@ -1,0 +1,82 @@
+# -*- coding: utf-8 -*-
+# 
+#  CNCHI_UPDATER.pot
+# 
+#  Copyright Â© 2013-2015 Antergos
+# 
+#  This file is part of Cnchi.
+# 
+#  Cnchi is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+# 
+#  Cnchi is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+# 
+#  You should have received a copy of the GNU General Public License
+#  along with Cnchi; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+# 
+# Translators:
+# WvW.ScHaO <metinkilicse@gmail.com>, 2015
+# Yunus Emre Püskülcü <puskulcu@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Antergos\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-05 18:37-0500\n"
+"PO-Revision-Date: 2015-07-03 20:28+0000\n"
+"Last-Translator: FreeClass <inactive+FreeClass@transifex.com>\n"
+"Language-Team: Turkish (Turkey) (http://www.transifex.com/faidoc/antergos/language/tr_TR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr_TR\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.7.5\n"
+
+#: pacman-boot:38
+msgid "INSTALLER NOTICE:"
+msgstr "YÜKLEYİCİ BİLDİRİMİ:"
+
+#: pacman-boot:39
+msgid ""
+"You must be connected to the internet to install Antergos. Click the network"
+" icon in the top bar to configure your connection."
+msgstr "Antergos'u yüklemek için internete bağlı olmalnız gerekir. Bağlantınızı ayarlamak için yukarıdaki ağ simgesine tıklayın."
+
+#: pacman-boot:40
+msgid "Installing Updates"
+msgstr "Güncellemeler Yükleniyor."
+
+#: pacman-boot:41
+msgid "Installing available updates."
+msgstr "Kullanılabilir güncellemeler yükleniyor."
+
+#: pacman-boot:42
+msgid "Update Complete"
+msgstr "Güncelleme Tamamlandı"
+
+#: pacman-boot:43
+msgid "Updates were installed sucessfully. Starting Cnchi..."
+msgstr "Güncellemeler başarılı bir şekilde yüklendi. Cnchi başlatılıyor..."
+
+#: pacman-boot:44
+msgid "Cnchi Automatic Updates"
+msgstr "Cnchi Otomatik Güncellemeleri"
+
+#: pacman-boot:45
+msgid "Checking for available updates for the Antergos Installer."
+msgstr "Antergos Yükleyici için kullanılabilir durumdaki güncellemeler kontrol ediliyor."
+
+#: pacman-boot:46
+msgid "Check was sucessful."
+msgstr "Kontrol başarıyla tamamlandı."
+
+#: pacman-boot:47
+msgid "You have the latest version. You can proceed with your installation!"
+msgstr "En güncel sürümü kullanıyorsunuz. Kurulum sürecine devam edebilirsiniz."

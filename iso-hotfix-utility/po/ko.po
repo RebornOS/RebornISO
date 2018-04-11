@@ -1,0 +1,81 @@
+# -*- coding: utf-8 -*-
+# 
+#  CNCHI_UPDATER.pot
+# 
+#  Copyright Â© 2013-2015 Antergos
+# 
+#  This file is part of Cnchi.
+# 
+#  Cnchi is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+# 
+#  Cnchi is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+# 
+#  You should have received a copy of the GNU General Public License
+#  along with Cnchi; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+# 
+# Translators:
+# Youngbin Han <sukso96100@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Antergos\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-05 18:37-0500\n"
+"PO-Revision-Date: 2015-08-19 13:52+0000\n"
+"Last-Translator: Youngbin Han <sukso96100@gmail.com>\n"
+"Language-Team: Korean (http://www.transifex.com/faidoc/antergos/language/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.7.5\n"
+
+#: pacman-boot:38
+msgid "INSTALLER NOTICE:"
+msgstr "설치마법사 공지사항:"
+
+#: pacman-boot:39
+msgid ""
+"You must be connected to the internet to install Antergos. Click the network"
+" icon in the top bar to configure your connection."
+msgstr "Antergos 를 설치하기 위해 네트워크 연결이 필요합니다. 상단 막대에 있는 네트워크 아이콘을 클릭하여 네트워크 연결을 설정하세요."
+
+#: pacman-boot:40
+msgid "Installing Updates"
+msgstr "업데이트 설치 중"
+
+#: pacman-boot:41
+msgid "Installing available updates."
+msgstr "이용가능한 업데이트 설치 중."
+
+#: pacman-boot:42
+msgid "Update Complete"
+msgstr "업데이트 완료"
+
+#: pacman-boot:43
+msgid "Updates were installed sucessfully. Starting Cnchi..."
+msgstr "업데이트가 성공적으로 설치되었습니다. Cnchi 를 시작합니다..."
+
+#: pacman-boot:44
+msgid "Cnchi Automatic Updates"
+msgstr "Cnchi 자동 업데이트"
+
+#: pacman-boot:45
+msgid "Checking for available updates for the Antergos Installer."
+msgstr "이용 가능한 Antergos 설치 마법사 업데이트 확인 중."
+
+#: pacman-boot:46
+msgid "Check was sucessful."
+msgstr "확인 성공."
+
+#: pacman-boot:47
+msgid "You have the latest version. You can proceed with your installation!"
+msgstr "최신 버전을 사용 중이십니다. 설치를 진행하실 수 있습니다!"

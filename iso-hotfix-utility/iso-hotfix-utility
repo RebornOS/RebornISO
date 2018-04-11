@@ -1,0 +1,195 @@
+#!/bin/bash
+#
+# iso-hotfix-utility
+#
+# Copyright © 2013-2016 Antergos
+#
+# This file is part of iso-hotfix-utility.
+#
+# iso-hotfix-utility is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+#
+# iso-hotfix-utility is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# The following additional terms are in effect as per Section 7 of the license:
+#
+# The preservation of all legal notices and author attributions in
+# the material or in the Appropriate Legal Notices displayed
+# by works containing it is required.
+#
+# You should have received a copy of the GNU General Public License
+# along with iso-hotfix-utility; if not, see <http://www.gnu.org/licenses/>.
+
+
+###
+##
+# Initialize Variables
+##
+###
+
+LEVEL='critical'
+
+if [[ -z "${_INITIALIZED}" ]]; then
+	NETWORK_ALIVE=1
+	NOTIFIED='False'
+	SCRIPT_UPDATED='False'
+	APP_ICON=''
+	APP_NAME=''
+	_INITIALIZED='True'
+	LAST_SENT=''
+fi
+
+
+###
+##
+# Define Functions
+##
+###
+
+_2log() {
+	echo "====>>>$1<<<===="
+}
+
+
+_is_network_alive() {
+	for site in google.com yandex.ru baidu.com
+	do
+		ping -c1 "${site}" >/dev/null 2>&1 && return 0
+	done
+
+	return 1
+}
+
+
+_do_network_check() {
+	{ _is_network_alive && NETWORK_ALIVE='True'; } || NETWORK_ALIVE='False'
+}
+
+
+_setup_environment() {
+	_2log '[iso-hotfix-utility] Setting up environment..'
+
+	if [[ $0 = *'iso-hotfix-utility'* ]]; then
+		SCRIPT_UPDATED='True'
+		NETWORK_ALIVE='True'
+		_2log '[iso-hotfix-utility] Script has been updated.'
+	else
+		_do_network_check
+	fi
+}
+
+
+_notify_user() {
+	[[ -f /tmp/.last_sent ]] && read -r LAST_SENT < /tmp/.last_sent
+
+	if [[ "${LAST_SENT}" != '' ]]; then
+		LAST_SENT=$(notify-send.sh -a "${APP_NAME}" -i "${APP_ICON}" -u "${LEVEL}" -r "${LAST_SENT}" -p "$1" "$2")
+	else
+		LAST_SENT=$(notify-send.sh -a "${APP_NAME}" -i "${APP_ICON}" -u "${LEVEL}" -p "$1" "$2")
+	fi
+
+	echo "${LAST_SENT}" > /tmp/.last_sent && read -r LAST_SENT < /tmp/.last_sent
+}
+
+
+_maybe_wait_for_internet_connection() {
+	local connected
+	connected='[iso-hotfix-utility] We have internet connection.'
+
+	if [[ "${NETWORK_ALIVE}" = 'True' ]]; then
+		_2log "${connected}"
+		return
+	fi
+
+	hotfix_waiting_for_internet
+
+	while [[ "${NETWORK_ALIVE}" != 'True' ]]; do
+		if [[ "${NOTIFIED}" = 'False' ]]; then
+			_notify_user "${NO_CONNECTION}" "${NO_CONNECTION_SUB}"
+			NOTIFIED='True'
+		fi
+
+		_do_network_check
+		sleep 1;
+	done
+
+	_2log "${connected}"
+}
+
+
+_maybe_update_rerun_and_exit() {
+	if [[ "${SCRIPT_UPDATED}" = 'True' ]]; then
+		return
+	fi
+
+	hotfix_maybe_update
+
+	if [[ -f /usr/bin/iso-hotfix-utility ]]; then
+		{ nohup /usr/bin/iso-hotfix-utility & } && exit 0
+	else
+		_2log '[iso-hotfix-utility] Failed to update hotifx package!'
+	fi
+}
+
+
+_run_when_connected() {
+	_maybe_wait_for_internet_connection
+
+	_maybe_update_rerun_and_exit
+
+	hotfix_run_when_connected
+}
+
+
+###
+##
+# Do Stuff
+##
+###
+
+# remember whether extglob was originally set, so we know whether to unset it
+shopt -q extglob; extglob_set=$?
+
+# set extglob if it wasn't originally set.
+((extglob_set)) && shopt -s extglob
+
+
+supplemental_files_i18n=(/etc/iso-hotfix-utility.d/**_i18n)
+supplemental_files=(/etc/iso-hotfix-utility.d/**!(_i18n))
+
+# Load translatable strings for supplemental files
+for supplemental_file_i18n in "${supplemental_files_i18n[@]}"
+do
+	# shellcheck source=/dev/null
+	source "${supplemental_file_i18n}"
+done
+
+# Load supplemental files
+for supplemental_file in "${supplemental_files[@]}"
+do
+	# shellcheck source=/dev/null
+	source "${supplemental_file}"
+done
+
+
+# unset extglob if it wasn't originally set
+((extglob_set)) && shopt -u extglob
+
+
+hotfix_before_environment_setup "$1"
+
+{
+	{ _setup_environment \
+		&& hotfix_setup_environment \
+		&& _run_when_connected \
+		&& sleep 5 \
+		&& [[ -f /tmp/.setup-running ]] \
+		&& exit 0; \
+	} || { hotfix_run_if_failed && exit 1; }
+
+} >> /tmp/pacman-boot.log 2>&1;

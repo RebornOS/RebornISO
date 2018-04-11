@@ -1,0 +1,82 @@
+# -*- coding: utf-8 -*-
+# 
+#  CNCHI_UPDATER.pot
+# 
+#  Copyright Â© 2013-2015 Antergos
+# 
+#  This file is part of Cnchi.
+# 
+#  Cnchi is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+# 
+#  Cnchi is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+# 
+#  You should have received a copy of the GNU General Public License
+#  along with Cnchi; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+# 
+# Translators:
+# Emir Pasanovic <emir.pasanovic@gmail.com>, 2015
+# Ivica  Kolić <ikoli@yahoo.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Antergos\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-05 18:37-0500\n"
+"PO-Revision-Date: 2015-07-28 12:39+0000\n"
+"Last-Translator: Emir Pasanovic <emir.pasanovic@gmail.com>\n"
+"Language-Team: Croatian (http://www.transifex.com/faidoc/antergos/language/hr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hr\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.7.5\n"
+
+#: pacman-boot:38
+msgid "INSTALLER NOTICE:"
+msgstr "NAPOMENA INSTALACIJSKOG PROGRAMA:"
+
+#: pacman-boot:39
+msgid ""
+"You must be connected to the internet to install Antergos. Click the network"
+" icon in the top bar to configure your connection."
+msgstr "Da biste instalirali Antergos morate biti spojeni na internet. Na gornjoj traci kliknite na ikonu mreže za konfiguraciju vaše veze."
+
+#: pacman-boot:40
+msgid "Installing Updates"
+msgstr "Instaliranje ažuriranja"
+
+#: pacman-boot:41
+msgid "Installing available updates."
+msgstr "Instaliranje dostupnih ažuriranja."
+
+#: pacman-boot:42
+msgid "Update Complete"
+msgstr "Ažuriranje dovršeno"
+
+#: pacman-boot:43
+msgid "Updates were installed sucessfully. Starting Cnchi..."
+msgstr "Ažuriranja su uspješno instalirana. Pokrećem Cnchi..."
+
+#: pacman-boot:44
+msgid "Cnchi Automatic Updates"
+msgstr "Cnchi automatska ažuriranja "
+
+#: pacman-boot:45
+msgid "Checking for available updates for the Antergos Installer."
+msgstr "Provjera dostupnosti ažuriranja Antergos instalacijskog programa."
+
+#: pacman-boot:46
+msgid "Check was sucessful."
+msgstr "Provjera uspješno dovršena."
+
+#: pacman-boot:47
+msgid "You have the latest version. You can proceed with your installation!"
+msgstr "Imate najnoviju verziju. Možete nastaviti s vašom instalacijom!"

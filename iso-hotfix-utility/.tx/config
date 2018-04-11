@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[antergos.cnchi_updaterpot]
+file_filter = po/<lang>.po
+source_file = po/CNCHI_UPDATER.pot
+source_lang = en
+type = PO

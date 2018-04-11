@@ -1,0 +1,49 @@
+#!/bin/bash
+#
+# antergos-iso_i18n
+#
+# Copyright © 2013-2016 Antergos
+#
+# This file is part of iso-hotfix-utility.
+#
+# iso-hotfix-utility is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+#
+# iso-hotfix-utility is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# The following additional terms are in effect as per Section 7 of the license:
+#
+# The preservation of all legal notices and author attributions in
+# the material or in the Appropriate Legal Notices displayed
+# by works containing it is required.
+#
+# You should have received a copy of the GNU General Public License
+# along with iso-hotfix-utility; if not, see <http://www.gnu.org/licenses/>.
+
+
+export TEXTDOMAIN="CNCHI_UPDATER"
+export GETTEXT='gettext "CNCHI_UPDATER"'
+
+###
+##
+# Translatable Strings
+##
+###
+
+NO_CONNECTION=$(${GETTEXT} "INSTALLER NOTICE:")
+NO_CONNECTION_SUB_STR='You must be connected to the internet to install Antergos. '
+NO_CONNECTION_SUB_STR+='Click the network icon in the top bar to configure your connection.'
+NO_CONNECTION_SUB=$(${GETTEXT} "${NO_CONNECTION_SUB_STR}")
+INSTALLING_UPDATES=$(${GETTEXT} "Installing Updates")
+INSTALLING_UPDATES_SUB=$(${GETTEXT} "Installing available updates.")
+UPDATE_COMPLETE=$(${GETTEXT} "Update Complete")
+UPDATE_COMPLETE_SUB=$(${GETTEXT} "Updates were installed sucessfully. Starting Cnchi...")
+CHECKING_UPDATES=$(${GETTEXT} "Cnchi Automatic Updates")
+CHECKING_UPDATES_SUB=$(${GETTEXT} "Checking for available updates for the Antergos Installer.")
+NO_UPDATES_CN=$(${GETTEXT} "Check was sucessful.")
+NO_UPDATES_CN_SUB=$(${GETTEXT} "You have the latest version. You can proceed with your installation!")

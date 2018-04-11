@@ -1,0 +1,84 @@
+# -*- coding: utf-8 -*-
+# 
+#  CNCHI_UPDATER.pot
+# 
+#  Copyright Â© 2013-2015 Antergos
+# 
+#  This file is part of Cnchi.
+# 
+#  Cnchi is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+# 
+#  Cnchi is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+# 
+#  You should have received a copy of the GNU General Public License
+#  along with Cnchi; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+# 
+# Translators:
+# Dz Chen <wsxy162@gmail.com>, 2015
+# Dz Chen <wsxy162@gmail.com>, 2015
+# deisiler <deisiler@sina.com>, 2015
+# Dz Chen <wsxy162@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Antergos\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-05 18:37-0500\n"
+"PO-Revision-Date: 2016-01-26 11:01+0000\n"
+"Last-Translator: Dz Chen <wsxy162@gmail.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/faidoc/antergos/language/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.7.5\n"
+
+#: pacman-boot:38
+msgid "INSTALLER NOTICE:"
+msgstr "安装提示："
+
+#: pacman-boot:39
+msgid ""
+"You must be connected to the internet to install Antergos. Click the network"
+" icon in the top bar to configure your connection."
+msgstr "您必须连接到互联网来安装 Antergos。点击顶部任务栏上的网络图标来配置连接。"
+
+#: pacman-boot:40
+msgid "Installing Updates"
+msgstr "正在安装更新"
+
+#: pacman-boot:41
+msgid "Installing available updates."
+msgstr "正在安装可用更新。"
+
+#: pacman-boot:42
+msgid "Update Complete"
+msgstr "更新完成"
+
+#: pacman-boot:43
+msgid "Updates were installed sucessfully. Starting Cnchi..."
+msgstr "已经更新成功。启动 Chchi 中..."
+
+#: pacman-boot:44
+msgid "Cnchi Automatic Updates"
+msgstr "Cnchi 自动更新"
+
+#: pacman-boot:45
+msgid "Checking for available updates for the Antergos Installer."
+msgstr "正在为 Antergos 安装器检查可用更新。"
+
+#: pacman-boot:46
+msgid "Check was sucessful."
+msgstr "检查已经成功。"
+
+#: pacman-boot:47
+msgid "You have the latest version. You can proceed with your installation!"
+msgstr "您已拥有最新版本。您可以继续您的安装 ！"

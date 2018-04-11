@@ -1,0 +1,83 @@
+# -*- coding: utf-8 -*-
+# 
+#  CNCHI_UPDATER.pot
+# 
+#  Copyright Â© 2013-2015 Antergos
+# 
+#  This file is part of Cnchi.
+# 
+#  Cnchi is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+# 
+#  Cnchi is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+# 
+#  You should have received a copy of the GNU General Public License
+#  along with Cnchi; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+# 
+# Translators:
+# Adam_eM <adam.mrowczynski@gmail.com>, 2015
+# Hubert Cwajda <cwajdahubert@gmail.com>, 2015
+# Michał Szymanowski <tylkobuba@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Antergos\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-05 18:37-0500\n"
+"PO-Revision-Date: 2015-09-15 08:16+0000\n"
+"Last-Translator: Adam_eM <adam.mrowczynski@gmail.com>\n"
+"Language-Team: Polish (Poland) (http://www.transifex.com/faidoc/antergos/language/pl_PL/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pl_PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.7.5\n"
+
+#: pacman-boot:38
+msgid "INSTALLER NOTICE:"
+msgstr "NOTKA INSTALACYJNA:"
+
+#: pacman-boot:39
+msgid ""
+"You must be connected to the internet to install Antergos. Click the network"
+" icon in the top bar to configure your connection."
+msgstr "Musisz być połączony z internetem by móc zainstalować Antergos. Kliknij na ikonę połączenia z siecią na górnym panelu by skonfigurować połączenie."
+
+#: pacman-boot:40
+msgid "Installing Updates"
+msgstr "Instalowanie Aktualizacji"
+
+#: pacman-boot:41
+msgid "Installing available updates."
+msgstr "Instalowanie dostępnych aktualizacji."
+
+#: pacman-boot:42
+msgid "Update Complete"
+msgstr "Aktualizacja Ukończona"
+
+#: pacman-boot:43
+msgid "Updates were installed sucessfully. Starting Cnchi..."
+msgstr "Aktualizacje zainstalowano pomyślnie. Uruchamianie Cnchi..."
+
+#: pacman-boot:44
+msgid "Cnchi Automatic Updates"
+msgstr "Cnchi Automatyczne Aktualizacje"
+
+#: pacman-boot:45
+msgid "Checking for available updates for the Antergos Installer."
+msgstr "Szukanie dostępnych aktualizacji dla instalatora Atergos."
+
+#: pacman-boot:46
+msgid "Check was sucessful."
+msgstr "Sprawdzanie zakończone powodzeniem."
+
+#: pacman-boot:47
+msgid "You have the latest version. You can proceed with your installation!"
+msgstr "Posiadasz najnowszą wersje. Możesz kontynuować instalację."
