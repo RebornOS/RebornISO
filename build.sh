@@ -258,6 +258,7 @@ cp ${script_path}/images/desktop-environment-pantheon.svg ${work_dir}/${arch}/ai
 cp ${script_path}/images/desktop-environment-budgie.svg ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/icons/scalable/
 cp ${script_path}/images/desktop-environment-i3.svg ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/icons/scalable/
 cp ${script_path}/Cnchi/reborn-mirrorlist ${work_dir}/${arch}/airootfs/etc/pacman.d/
+cp ${script_path}/Cnchi/reborn-mirrorlist2 ${work_dir}/${arch}/airootfs/usr/share/cnchi/
 echo "DONE"
 }
 # Prepare kernel/initramfs ${install_dir}/boot/
