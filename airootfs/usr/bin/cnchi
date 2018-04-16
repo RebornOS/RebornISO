@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pkexec /usr/share/cnchi/bin/cnchi -s bugsnag ${@}

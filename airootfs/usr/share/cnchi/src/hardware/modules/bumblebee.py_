@@ -1,0 +1,100 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+#  bumblebee.py
+#
+#  Copyright © 2013-2017 Antergos
+#
+#  This file is part of Cnchi.
+#
+#  Cnchi is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 3 of the License, or
+#  (at your option) any later version.
+#
+#  Cnchi is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  The following additional terms are in effect as per Section 7 of the license:
+#
+#  The preservation of all legal notices and author attributions in
+#  the material or in the Appropriate Legal Notices displayed
+#  by works containing it is required.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with Cnchi; If not, see <http://www.gnu.org/licenses/>.
+
+
+""" Hybrid bumblebee solution for NVIDIA Optimus Technology
+    Closed source NVIDIA driver & open source intel driver. """
+
+try:
+    from hardware.hardware import Hardware
+except ImportError:
+    from hardware import Hardware
+
+import os
+
+CLASS_NAME = "Bumblebee"
+CLASS_ID = "0x03"
+VENDOR_IDS = ["0x10de", "0x8086"]
+DEVICES = ""
+PRIORITY = 3
+
+
+class Bumblebee(Hardware):
+    """ Bumblebee (Optimus cards) """
+
+    def __init__(self):
+        self.cards_detected = 0
+        Hardware.__init__(self, CLASS_NAME, CLASS_ID,
+                          VENDOR_IDS, DEVICES, PRIORITY)
+
+    def check_device(self, class_id, vendor_id, product_id):
+        """ Checks if the driver supports this device
+            For bumblebee we have to check that we have a nvidia plus intel cards """
+
+        if not self.enabled:
+            return False
+
+        if self.class_id and class_id != self.class_id:
+            return False
+
+        if self.vendor_id and vendor_id not in self.vendor_id:
+            return False
+
+        self.cards_detected = self.cards_detected + 1
+
+        if self.cards_detected >= 2:
+            return True
+        else:
+            return False
+
+    @staticmethod
+    def get_packages():
+        """ Get all required packages """
+        pkgs = ["bumblebee", "mesa", "xf86-video-intel", "nvidia", "virtualgl",
+                "nvidia-settings", "bbswitch"]
+        if os.uname()[-1] == "x86_64":
+            pkgs.extend(
+                ["lib32-nvidia-utils", "lib32-virtualgl", "lib32-mesa"])
+        return pkgs
+
+    @staticmethod
+    def get_conflicts():
+        """ Get conflicting packages """
+        pkgs = ["xf86-video-nouveau"]
+        return pkgs
+
+    @staticmethod
+    def post_install(dest_dir):
+        """ Post install commands """
+        # Done in install.py
+        pass
+
+    @staticmethod
+    def is_proprietary():
+        """ Returns True if the driver is a proprietary one """
+        return True
