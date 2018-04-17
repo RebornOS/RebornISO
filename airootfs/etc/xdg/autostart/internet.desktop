@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Refresh Pacman Databases
+Exec=sudo /usr/bin/internet.sh
