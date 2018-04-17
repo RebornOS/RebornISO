@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Install Reborn OS
+Name[pl]=Zainstaluj Reborn OS
+Name[sk]=Inštalovať Reborn OS
+GenericName=Live Installer
+Comment=Install the operating system to disk
+Comment[pl]=Zainstaluj system Reborn OS
+Comment[sk]=Nainštaluje operačný systém na disk
+Exec=/usr/bin/cnchi
+Icon=cnchi
+Terminal=False
+Type=Application
+Categories=System;
+Name[en_US.UTF-8]=Install Reborn OS
