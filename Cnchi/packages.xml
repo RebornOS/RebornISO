@@ -69,6 +69,16 @@
             </packages>
         </edition>
 
+        <edition name="Windows" description="Windows Interface">
+            <packages>
+                <pkgname nm='true' name='NetworkManager'>network-manager-applet</pkgname>
+                <pkgname>cinnamon-cosmic-reborn</pkgname>
+                <pkgname>sddm-theme-gracilis-git</pkgname>
+                <pkgname>sddm-config-editor-git</pkgname>
+                <pkgname>windows-theme</pkgname>
+            </packages>
+        </edition>
+
         <edition name="XFCE" description="XFCE Desktop">
             <packages>
                 <pkgname>xfce-cosmic-reborn</pkgname>

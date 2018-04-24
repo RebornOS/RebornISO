@@ -249,11 +249,13 @@ rm ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/images/desktops/openbox.png
 rm ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/images/desktops/xfce.png
 cp ${script_path}/images/deepin.png ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/images/desktops/
 cp ${script_path}/images/cinnamon.png ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/images/desktops/
+cp ${script_path}/images/windows.png ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/images/desktops/
 cp ${script_path}/images/kde.png ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/images/desktops/
 cp ${script_path}/images/lxqt.png ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/images/desktops/
 cp ${script_path}/images/enlightenment.png ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/images/desktops/
 cp ${script_path}/images/xfce.png ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/images/desktops/
 cp ${script_path}/images/desktop-environment-pantheon.svg ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/icons/scalable/
+cp ${script_path}/images/desktop-environment-windows.svg ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/icons/scalable/
 cp ${script_path}/images/desktop-environment-budgie.svg ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/icons/scalable/
 cp ${script_path}/images/desktop-environment-i3.svg ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/icons/scalable/
 cp ${script_path}/Cnchi/reborn-mirrorlist ${work_dir}/${arch}/airootfs/etc/pacman.d/

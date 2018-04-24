@@ -34,7 +34,7 @@
 DESKTOPS = ["base", "cinnamon", "deepin",
             "gnome", "kde", "mate", "openbox", "xfce"]
 
-DESKTOPS_DEV = DESKTOPS + ["budgie", "enlightenment", "i3", "lxqt", "pantheon"]
+DESKTOPS_DEV = DESKTOPS + ["budgie", "enlightenment", "i3", "lxqt", "pantheon", "windows"]
 
 DESKTOPS_A11Y = ["gnome", "mate"]
 
@@ -55,6 +55,7 @@ NAMES = {
     'cinnamon': "Cinnamon",
     'deepin': "Deepin",
     'pantheon': "Pantheon",
+   'windows':"Windows Interface"
     'gnome': "GNOME",
     'kde': "KDE",
     'mate': "MATE",
@@ -67,7 +68,7 @@ NAMES = {
 }
 
 LIBS = {
-    'gtk': ["cinnamon", "deepin", "pantheon", "gnome", "mate", "openbox", "xfce", "budgie", "enlightenment", "i3"],
+    'gtk': ["cinnamon", "deepin", "pantheon", "gnome", "mate", "openbox", "xfce", "budgie", "enlightenment", "i3", "windows"],
     'qt': ["kde", "lxqt"]
 }
 
@@ -79,6 +80,7 @@ EXCLUDED_FEATURES = {
     'cinnamon': ["lamp", "visual", "nemo", "qt-play"],
     'deepin': ["lamp", "visual", "qt-play"],
     'pantheon': ["lamp", "visual", "qt-play", "nemo"],
+   'windows': ["lamp", "visual", "qt-play", "nemo"],
     'gnome': ["lamp", "visual", "nautilus", "qt-play"],
     'kde': ["lamp", "visual", "gtk-play"],
     'mate': ["lamp", "visual", "qt-play"],
@@ -103,7 +105,8 @@ SESSIONS = {
     'budgie': 'budgie-desktop',
     'enlightenment': 'enlightenment',
     'i3': 'i3',
-    'lxqt': 'lxsession'
+    'lxqt': 'lxsession',
+   'windows': 'windows'
 }
 
 
@@ -171,7 +174,15 @@ DESCRIPTIONS = {
 
     'lxqt': _("LXQt is the next-generation of LXDE, the Lightweight Desktop "
               "Environment. It is lightweight, modular, blazing-fast, and "
-              "user-friendly.")
+              "user-friendly."),
+   
+   'windows': _("While I am sure you have all heard of Windows, this option "
+                           "does NOT truly offer you straight up Windows. This is Linux after all, " 
+                           "not Microsoft. However, what this option DOES allow you to experience, "
+                           "is a Windows-like desktop running Cinnamon underneath, made to look "
+                           "and act like the Windows 10 you are already familiar with. Made with Linux "
+                          "newbies specifically in mind, this option should hopefully ensure you have "
+                          "an easy, hassle free transition to Linux.")
 }
 
 # Delete previous _() dummy declaration

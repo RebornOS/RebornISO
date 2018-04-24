@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Reborn Welcome
-Exec=sudo antergos-welcome
-Icon=gtk-info
