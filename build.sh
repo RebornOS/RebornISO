@@ -222,6 +222,10 @@ rm ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/pages/welcome.py
 cp ${script_path}/Cnchi/welcome.py ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/pages/
 rm ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/pages/desktop.py
 cp ${script_path}/Cnchi/desktop.py ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/pages/
+rm ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/download/metalink.py
+cp ${script_path}/Cnchi/metalink.py ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/download/
+rm ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/pacman/pac.py
+cp ${script_path}/Cnchi/pac.py ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/pacman/
 rm ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/images/antergos/antergos-logo-mini2.png
 cp ${script_path}/Cnchi/antergos-logo-mini2.png ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/images/antergos/
 cp ${script_path}/Cnchi/20-intel.conf ${work_dir}/${arch}/airootfs/usr/share/cnchi/
@@ -259,7 +263,6 @@ cp ${script_path}/images/desktop-environment-windows.svg ${work_dir}/${arch}/air
 cp ${script_path}/images/desktop-environment-budgie.svg ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/icons/scalable/
 cp ${script_path}/images/desktop-environment-i3.svg ${work_dir}/${arch}/airootfs/usr/share/cnchi/data/icons/scalable/
 cp ${script_path}/Cnchi/reborn-mirrorlist ${work_dir}/${arch}/airootfs/etc/pacman.d/
-cp ${script_path}/Cnchi/reborn-mirrorlist2 ${work_dir}/${arch}/airootfs/usr/share/cnchi/
 echo "DONE"
 }
 # Prepare kernel/initramfs ${install_dir}/boot/

@@ -55,7 +55,7 @@ NAMES = {
     'cinnamon': "Cinnamon",
     'deepin': "Deepin",
     'pantheon': "Pantheon",
-   'windows':"Windows Interface"
+   'windows':"Windows Interface",
     'gnome': "GNOME",
     'kde': "KDE",
     'mate': "MATE",
