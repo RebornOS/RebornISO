@@ -17,6 +17,7 @@
 - opendesktop-fonts
 - patch
 - squashfs-tools
+- archiso
 - lynx
 - wget
 
@@ -29,11 +30,11 @@ Please check that you have 5GB (or more) of free harddisk space in your root par
 
 1. Install dependencies:
 ```
-sudo pacman -S arch-install-scripts cpio dosfstools libisoburn mkinitcpio-nfs-utils make patch squashfs-tools wget lynx --needed
+sudo pacman -S arch-install-scripts cpio dosfstools libisoburn mkinitcpio-nfs-utils make patch squashfs-tools wget lynx archiso --needed
 ```
 2. Clone the repository recursively:
 ```
-git clone https://github.com/RebornOS/Reborn-OS.git --recursive
+git clone https://github.com/RebornOS/RebornISO.git --recursive
 ```
 3. Fix file permissions in order to successfully build the ISO:
 ```
