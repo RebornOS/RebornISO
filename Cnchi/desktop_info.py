@@ -34,9 +34,9 @@
 DESKTOPS = ["base", "cinnamon", "deepin",
             "gnome", "kde", "mate", "openbox", "xfce"]
 
-DESKTOPS_DEV = DESKTOPS + ["budgie", "enlightenment", "i3", "lxqt", "pantheon", "windows"]
+DESKTOPS_DEV = DESKTOPS + ["budgie", "enlightenment", "i3", "lxqt", "pantheon", "windows", "apricity"]
 
-DESKTOPS_A11Y = ["gnome", "mate"]
+DESKTOPS_A11Y = ["gnome", "mate", "apricity"]
 
 DESKTOP_ICONS_PATH = "/usr/share/cnchi/data/icons"
 
@@ -51,6 +51,7 @@ DIALOG - Size appropriate for dialogs (48px)
 
 # Descriptive names
 NAMES = {
+    'apricity': "Apricity",
     'base': "Base",
     'cinnamon': "Cinnamon",
     'deepin': "Deepin",
@@ -68,7 +69,7 @@ NAMES = {
 }
 
 LIBS = {
-    'gtk': ["cinnamon", "deepin", "pantheon", "gnome", "mate", "openbox", "xfce", "budgie", "enlightenment", "i3", "windows"],
+    'gtk': ["apricity", "cinnamon", "deepin", "pantheon", "gnome", "mate", "openbox", "xfce", "budgie", "enlightenment", "i3", "windows"],
     'qt': ["kde", "lxqt"]
 }
 
@@ -94,6 +95,7 @@ EXCLUDED_FEATURES = {
 
 # Session names for lightDM setup (/usr/share/xsessions)
 SESSIONS = {
+    'apricity' : 'gnome',
     'cinnamon': 'cinnamon',
     'deepin': 'deepin',
     'pantheon': 'pantheon',
@@ -119,6 +121,10 @@ DESCRIPTIONS = {
     'base': _("This option will install Reborn OS as command-line only system, "
               "without any type of graphical interface. After the installation you can "
               "customize Reborn OS by installing packages with the command-line package manager."),
+   'apricity': _("Apricity OS is a now discontinued Linux distro in the Arch Linux family that simply "
+                        "offered a highly customized GNOME dekstop experience that combined beauty with "
+                        "funcionality. With this option, the Apricity look and feel is finally revivied! Experience "
+                         "it now on Reborn OS."),
 
     'cinnamon': _("Cinnamon is a Linux desktop which provides advanced, "
                   "innovative features and a traditional desktop user experience. "

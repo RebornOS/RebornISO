@@ -363,6 +363,19 @@ postinstall() {
         cp /usr/share/cnchi/updating.sh ${CN_DESTDIR}/usr/bin/
     fi
 
+    if [[ apricity = "${CN_DESKTOP}" ]]; then
+        chroot ${CN_DESTDIR} systemctl -fq enable gdm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd gnome-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd common-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd graphic-cosmic-reborn --noconfirm
+        cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
+        cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
+        cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
+        cp /usr/share/cnchi/flatpak.desktop ${CN_DESTDIR}/usr/share/applications/
+        cp /usr/share/cnchi/update.desktop ${CN_DESTDIR}/etc/xdg/autostart/
+        cp /usr/share/cnchi/updating.sh ${CN_DESTDIR}/usr/bin/
+    fi
+
     if [[ kde = "${CN_DESKTOP}" ]]; then
         chroot ${CN_DESTDIR} systemctl -fq enable sddm
         cp /usr/share/cnchi/sddm.conf ${CN_DESTDIR}/etc/

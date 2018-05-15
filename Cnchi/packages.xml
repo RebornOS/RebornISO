@@ -51,6 +51,16 @@
             </packages>
         </edition>
 
+        <edition name="Apricity" description="Apricity Desktop">
+            <packages>
+                <pkgname>gnome-cosmic-reborn</pkgname>
+                <pkgname nm='true' name='NetworkManager'>network-manager-applet</pkgname>
+                <pkgname>gnome-shell-extensions</pkgname>
+                <pkgname>gnome</pkgname>
+                <pkgname>apricity-theme</pkgname>
+            </packages>
+        </edition>
+
         <edition name="Cinnamon" description="Cinnamon desktop">
             <packages>
                 <pkgname nm='true' name='NetworkManager'>network-manager-applet</pkgname>
