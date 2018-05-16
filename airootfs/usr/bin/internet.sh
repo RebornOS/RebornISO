@@ -1,4 +1,15 @@
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout '0' && gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout '0'
+if [ $XDG_CURRENT_DESKTOP = Budgie:GNOME]; then
+dconf write /org/gnome/desktop/background/picture-uri "'file:///usr/share/backgrounds/abstract1-reborn2.png'"
+dconf write /org/gnome/desktop/interface/gtk-theme "'Evo-Pop'"
+dconf write /org/gnome/desktop/interface/icon-name "'Flat-Remix'"
+fi
+if [ $XDG_CURRENT_DESKTOP = GNOME ]; then
+dconf write /org/gnome/desktop/background/picture-uri "'file:///usr/share/backgrounds/elementary.jpg'"
+dconf write /org/gnome/shell/extensions/user-theme/name "'Arctic-Apricity'"
+dconf write /org/gnome/desktop/interface/gtk-theme "'Arc'"
+dconf write /org/gnome/desktop/interface/icon-name "'Apricity-Icons'"
+fi
 wget --spider www.google.com
 if [ "$?" = 0 ]; then
   sudo rm -rf /etc/pacman.d/gnupg

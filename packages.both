@@ -101,6 +101,7 @@ screenfetch
 sddm-config-editor-git
 sddm-theme-gracilis-git
 epiphany
+apricity-theme
 
 
 
@@ -187,7 +188,6 @@ xf86-video-nouveau
 
 
 nvidia
-nvidia-libgl
 nvidia-settings
 
 
