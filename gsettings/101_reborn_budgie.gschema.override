@@ -23,6 +23,7 @@ show-ratings = true
 [org.gnome.shell]
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'arch-update@RaphaelRochet', 'ApricityGnome@anassboulmane.gmail.com', 'alternate-tab@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'status-menu-buttons@dev.antergos.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'TopIcons@phocean.net', 'Move_Clock@rmy.pobox.com']
 favorite-apps=['nautilus.desktop', 'gnome-terminal.desktop', 'chromium.desktop', 'gnome-music.desktop', 'pamac.desktop']
+always-show-log-out=true
 
 [org.gnome.desktop.peripherals.touchpad]
 natural-scroll=true
@@ -42,8 +43,6 @@ sources=[('xkb','us')]
 
 [org.gnome.desktop.wm.preferences]
 button-layout='appmenu:minimize,maximize,close'
-
-always-show-log-out=true
 
 [org.gnome.settings-daemon.plugins.xsettings]
 antialiasing='rgba'

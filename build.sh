@@ -158,7 +158,10 @@ make_fixes() {
                 cp ${_schema} ${work_dir}/${arch}/airootfs/usr/share/glib-2.0/schemas
             done
             # Compile GSettings XML schema files
+            rm ${work_dir}/${arch}/airootfs/usr/share/glib-2.0/schemas/98_gnome.gschema.override
+            echo "REMOVED APRICITY GSETTINGS"
             ${work_dir}/${arch}/airootfs/usr/bin/glib-compile-schemas ${work_dir}/${arch}/airootfs/usr/share/glib-2.0/schemas
+          echo "GENERATED REBORN GSETTINGS"
         fi
 #Use lightdm.conf from local direcectory instead of default one
 echo "Removing unnecessary lightdm.conf"
