@@ -37,6 +37,7 @@ ICON_NAMES = {
     'a11y': 'preferences-desktop-accessibility',
     'aur': 'system-software-install',
     'bluetooth': 'bluetooth',
+    'broadcom':'cs-drivers',
     'cups': 'printer',
     'chromium': 'chromium',
     'dropbox': 'dropbox',
@@ -81,6 +82,7 @@ TITLES = {
     'a11y': _("Adds accessibility packages"),
     'aur': _("Arch User Repository (AUR) Support"),
     'bluetooth': _("Bluetooth Support"),
+    'broadcom': _("Broadcom Driver Support"),
     'cups': _("Printing Support"),
     'chromium': _("Chromium Web Browser"),
     'dropbox': _("Dropbox"),
@@ -119,6 +121,7 @@ DESCRIPTIONS = {
     'a11y': _("Useful packages for individuals who are blind or visually impaired."),
     'aur': _("The AUR is a community-driven repository for Arch users."),
     'bluetooth': _("Enables your system to make wireless connections via Bluetooth."),
+    'broadcom': _("Enables your system to effectively use a Broadcom driver"),
     'chromium': _("Open-source web browser from Google."),
     'email': _("Installs Thunderbird as your Desktop Email Client"),
     'dropbox': _("Free file hosting service for Linux"),
@@ -163,6 +166,10 @@ TOOLTIPS = {
                    "interconnection of cellular phones, computers, and\n"
                    "other electronic devices. In Linux, the canonical\n"
                    "implementation of the Bluetooth protocol stack is BlueZ."),
+    'broadcom': _("NOTE: IF YOU ARE UNSURE EXACTLY OF WHAT NEMO IS, IT IS ADVISED TO\n"
+                               "NOT ENABLE THIS FEATURE.\n"
+                              "However, if you are sure that you are using a braodcom driver on your system,\n"
+                              "then it is advised to enable this option as it installs several broadcom dependencies."),
     'cups': _("CUPS is the standards-based, open source printing\n"
               "system developed by Apple Inc. for OS® X and other\n"
               "UNIX®-like operating systems."),

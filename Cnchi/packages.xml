@@ -215,6 +215,9 @@
             <pkgname desktops='kde,lxqt'>bluedevil</pkgname>
             <pkgname desktops='gnome'>gnome-bluetooth</pkgname>
         </feature>
+        <feature name="broadcom">
+            <pkgname>broadcom-wl</pkgname>
+        </feature>
         <feature name="cups">
             <pkgname>cups</pkgname>
             <pkgname>cups-pk-helper</pkgname>
