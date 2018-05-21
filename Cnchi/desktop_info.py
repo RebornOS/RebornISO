@@ -78,6 +78,7 @@ ALL_FEATURES = ["a11y", "aur", "bluetooth", "broadcom", "maintenance", "cups", "
 # Not all desktops have all features
 EXCLUDED_FEATURES = {
     'base': ["bluetooth", "chromium", "maintenance", "dropbox", "email", "firefox", "firewire", "opera", "vivaldi", "firewall", "flash", "games", "graphic_drivers", "graphics", "hardinfo", "office", "visual", "vlc", "nautilus", "nemo", "nixnote", "qt-play", "movie", "gtk-play", "qt-play", "power", "spotify", "wallpapers"],
+    'apricity': ["lamp", "visual", "nautilus", "qt-play"],
     'cinnamon': ["lamp", "visual", "nemo", "qt-play"],
     'deepin': ["lamp", "visual", "qt-play"],
     'pantheon': ["lamp", "visual", "qt-play", "nemo"],
@@ -121,11 +122,10 @@ DESCRIPTIONS = {
     'base': _("This option will install Reborn OS as command-line only system, "
               "without any type of graphical interface. After the installation you can "
               "customize Reborn OS by installing packages with the command-line package manager."),
-   'apricity': _("Apricity OS is a now discontinued Linux distro in the Arch Linux family that simply "
+   'apricity': _("Apricity OS is a now discontinued Linux distro in the Arch Linux family that simply  "
                         "offered a highly customized GNOME dekstop experience that combined beauty with "
                         "funcionality. With this option, the Apricity look and feel is finally revivied! Experience "
                          "it now on Reborn OS."),
-
     'cinnamon': _("Cinnamon is a Linux desktop which provides advanced, "
                   "innovative features and a traditional desktop user experience. "
                   "Cinnamon aims to make users feel at home by providing them with "
