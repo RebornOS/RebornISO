@@ -159,6 +159,7 @@ make_fixes() {
             done
             # Compile GSettings XML schema files
             rm ${work_dir}/${arch}/airootfs/usr/share/glib-2.0/schemas/98_gnome.gschema.override
+            rm ${work_dir}/${arch}/airootfs/usr/share/glib-2.0/schemas/95_budgie.gschema.override
             echo "REMOVED APRICITY GSETTINGS"
             ${work_dir}/${arch}/airootfs/usr/bin/glib-compile-schemas ${work_dir}/${arch}/airootfs/usr/share/glib-2.0/schemas
           echo "GENERATED REBORN GSETTINGS"
