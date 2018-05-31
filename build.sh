@@ -215,6 +215,8 @@ cp ${script_path}/Cnchi/systemd_boot.py ${work_dir}/${arch}/airootfs/usr/share/c
 rm ${work_dir}/${arch}/airootfs/usr/share/cnchi/scripts/postinstall.sh
 cp ${script_path}/Cnchi/postinstall.sh ${work_dir}/${arch}/airootfs/usr/share/cnchi/scripts/
 rm ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/main_window.py
+rm ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/info.py
+cp ${script_path}/Cnchi/info.py ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/
 cp ${script_path}/Cnchi/main_window.py ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/
 rm ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/show_message.py
 cp ${script_path}/Cnchi/show_message.py ${work_dir}/${arch}/airootfs/usr/share/cnchi/src/

@@ -1,4 +1,7 @@
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout '0' && gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout '0'
+sudo pacman -Scc --noconfirm
+paccache -ruk0 
+sudo paccache -r --keep 0
 wget --spider www.google.com
 if [ "$?" = 0 ]; then
   sudo rm -rf /etc/pacman.d/gnupg
