@@ -348,6 +348,8 @@ postinstall() {
         cp /usr/share/cnchi/flatpak.desktop ${CN_DESTDIR}/usr/share/applications/
         cp /usr/share/cnchi/update.desktop ${CN_DESTDIR}/etc/xdg/autostart/
         cp /usr/share/cnchi/updating.sh ${CN_DESTDIR}/usr/bin/
+        cp /usr/share/cnchi/deepin-fix.sh ${CN_DESTDIR}/usr/bin/
+        cp /usr/share/cnchi/deepin-fix.desktop ${CN_DESTDIR}/etc/xdg/autostart/
     fi
 
     if [[ gnome = "${CN_DESKTOP}" ]]; then

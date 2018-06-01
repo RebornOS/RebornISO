@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Fix Deepin's White Screen of "Death"
+Exec=deepin-fix.sh
+Icon=/usr/share/icons/default/reborn-updates.svg
+NoDisplay=true
